@@ -1,0 +1,12 @@
+/target/
+/**/*.pdb
+/**/*.ilk
+/**/*.exp
+/**/*.lib
+/**/*.dll
+!/docs/**/*.dll.md
+/.local/
+/.gabs-local/
+/dist/
+/scripts/start-gmod-dev.cmd
+/scripts/start-gmod-client-dev.cmd
