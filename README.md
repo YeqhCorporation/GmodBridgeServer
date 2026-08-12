@@ -39,6 +39,19 @@ The produced DLLs are installed under these four module names:
 - `target/i686-pc-windows-msvc/debug/gmod_gabp.dll` -> `gmcl_gabp_win32.dll`
 - `target/x86_64-pc-windows-msvc/debug/gmod_gabp.dll` -> `gmcl_gabp_win64.dll`
 
+## Releases
+
+Pushing a version tag publishes a GitHub release automatically:
+
+```powershell
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+The release workflow builds Windows and Linux modules, uploads individual DLLs,
+publishes a modules-only zip, and publishes an installable zip containing
+`addons/gabp_bridge` plus `lua/bin` with the ready-to-use module names.
+
 ## Documentation
 
 | Guide | Purpose |
